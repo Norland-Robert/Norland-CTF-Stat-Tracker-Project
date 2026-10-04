@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Header Content Requirements-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Adds the CSS script to the program to allow customization-->
+    <link rel="stylesheet" href= "Norland_Project_Styles.css">
+
+    <!--Adds the JS script to the program for functionality-->
+    <script src="Norland_Tracker_Main.js" defer></script>
+         
+    <title> Norland_Robert_CTF_Stat_Tracker </title>
+</head>
+    <body>
+
+        <!-- Sets the Visual Title of the Application-->
+        <div class="title">
+            <h1>
+                <p>Cybersecurity CTF Stat Tracker</p>
+            </h1>
+        </div>
+
+        <div class = "hr1">
+            <hr>
+        </div>
+        
+        <div class="grid-container" id="grid-container">
+          
+            
+            <!--There will be 5 boxes containing the CTF Name, Points Score, Flags Secured, Start/End dates and/or times-->
+            
+            <!--Column for the CTF name-->
+            <div class="grid-item CTF_Name">
+                <div class="CTF_Name">
+                    
+                    <!--Text Display for the CTF Name Column-->
+                    <p>CTF Name</p>
+
+                </div>
+            </div>
+
+            <!--Colomn for points scored-->
+            <div class="Points_Scored">
+                <div class="Points_Scored">
+
+                    <!--Text Display for the Points Column-->
+                    <p>Points Scored</p>
+
+                </div>
+            </div>
+
+
+            <!--Column for flags secured-->
+            <div class="Flags_Secured">
+                <div class="Flags_Secured">
+
+                    <!--Text Display for the Flags Secured Column-->
+                    <p>Flags Secured</p>
+
+                </div>
+            </div>
+
+
+            <!--Column for Competition Start Date and Time-->
+            <div class="Comp_Start">
+                <div class="Comp_Start">
+
+                    <!--Text display for the Competition Start Column-->
+                    <p>Competition Start</p>
+
+                </div>
+            </div>
+
+
+            <!--Column for competition End Date and Time-->
+            <div class="Comp_Conclusion">
+                <div class="Comp_Conclusion">
+
+                    <!--Text Display for the Competition End Column-->
+                    <p>Competition End</p>
+
+                </div>
+            </div>
+          
+
+        
+        </div>
+
+
+            <!--Buttons for gathering CTF information that will create new boxes containing the information-->
+            <form action="/submit-data" id="new-ctf-registry" method="POST">
+                
+                <!--Field box for entering the new CTF name-->
+                <div class="forms">  
+                    <label for="CTF_Name">CTF Name:</label>
+                    <input type="text" id="CTF_Name" name="new_ctf_name">
+                </div>
+
+                <!--Field box for entering the new CTF Score value-->
+                <div class="forms">
+                    <label for="CTF_Score">CTF Score</label>
+                    <input type="text" id="CTF_Score" name="new_ctf_score">
+                </div>
+        
+        
+                <!--Field box for entering the new CTF flag value-->        
+                <div class="forms">
+                    <label for="CTF_Flag">CTF Flags</label>
+                    <input type="text" id="CTF_Flags" name = "new_ctf_flags">
+                </div>
+
+
+                <!--Field box for entering the new CTF Start Date-->
+                <div class="forms">
+                    <label for="CTF_Start_Date">CTF Start Date</label>
+                    <input type="text" id="CTF_Start_Date" name="new_ctf_start_date">
+                </div>
+                
+                <!--Field box for entering the new CTF End Date-->
+                <div class="forms">
+                    <label for="CTF_End_Date">CTF End Date</label>
+                    <input type="text" id="CTF_End_Date" name="new_ctf_end_date">
+                </div>
+                <input type="submit" id="Submission" value="Submit">
+
+                <input type="submit" id="clear-data-button" value="Clear Saved Data">
+
+            </form>
+
+        <!--Footer with basic copyright notice-->
+        <div class="flexbox-container">    
+            <div class="flexbox-item flex-copyright">
+                <div class="copyright">
+                    <footer>
+                        <p> &copy; 2026 Robert Norland, All Rights Reserved</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

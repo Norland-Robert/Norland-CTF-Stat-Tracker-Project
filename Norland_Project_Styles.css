@@ -1,0 +1,265 @@
+/* Margin/Padding Reset */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+        background-color: rgb(39, 35, 35);
+        color:white;
+}
+
+/* Settings for the App Title */
+.title
+{
+    background-color: black;
+
+    color: rgb(72, 255, 0);
+
+    font-weight: bold;
+    
+    /*Changes the text and element Position*/
+    padding-left: 50px;
+
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    /*Changes the font size and font*/
+    font-size: 30px;
+
+    text-align: center;
+    
+}
+
+/* Settings for the Line break below the Title */
+.hr1
+{
+    margin-left: -30px;
+}
+
+/* Messses with the boxes for the Grid Style */
+.grid-container
+{
+    display: grid;
+
+    /* Creates a row that consists of 5 boxes maximum */
+    grid-template-columns: repeat(5, 1fr);
+    
+    width: 95%;
+
+    /* Provides some space between the sides of the screen and the grid */
+    margin: 20px auto;
+
+    /* Sets a small gap between each of the grid boxes to avoid cluster */
+    gap: 20px;
+
+}
+
+/* Modifies the contents of the name box */
+.CTF_Name
+{
+    background-color: blue;
+}
+
+/* Modifies the text display of the CTF name */
+.CTF_Name p
+{
+    font-size: 30px;
+
+    text-align: center;
+
+    color:white;
+}
+
+
+/* Modifies the Display of the Points Box */
+.Points_Scored
+{
+    background-color: blue;
+}
+
+/* Modifies the text display of the points */
+.Points_Scored p
+{
+    font-size: 30px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* Modifies the Display of the Flags Box */
+.Flags_Secured
+{
+    background-color: blue;
+}
+
+/*Modifies the text display of the Flags text*/
+.Flags_Secured p
+{
+    color:white;
+    font-size: 30px;
+
+    text-align: center;
+}
+
+/* Modifies the display of the Competition Start Box */
+.Comp_Start
+{
+    background-color: blue;
+}
+
+/* Modifies the text display of the Competition Start Box */
+.Comp_Start p
+{
+    font-size: 30px;
+
+    text-align: center;
+
+    color:white;
+}
+
+
+/* Modifies the display of the Competition End Box */
+.Comp_Conclusion
+{
+    background-color: blue;
+}
+
+/* Modifies the text display of the Competition End Box */
+.Comp_Conclusion p
+{
+    font-size: 30px;
+
+    text-align: center;
+
+    color:white;
+}
+
+
+.flexbox-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-item
+{
+    /*Sets the size of the box*/
+    size: auto 100px;
+
+    margin: 10px;
+
+    /*sets the color of the box background*/
+}
+
+.flex-copyright
+{
+    width:100%;
+    min-height: 100px;
+
+    /* Sets the distance between the left side of the box and the left edge of the screen */
+
+    margin-top: 50px;
+
+    /* Sets the distance from the bottom of the box and the bottom of the webpage */
+    bottom: 0;
+
+    background-color: black;
+}
+
+/* Settings for editing the copyright notice text */
+.flex-copyright p
+{
+    color:rgb(255, 0, 0);
+
+    /* Centers the text to the center of the screen */
+    text-align: center;        
+
+    margin-top: 50px;
+
+    font-size: 30px;
+}
+
+.grid-container label
+{
+    color:white;
+
+    padding-top:30px;
+
+    font-size: 20px;    
+}
+
+/*Edits the display of the fields */
+.forms
+{
+    display: flex;
+    
+    /* Sets the alignment for the fields to be one on top of another */
+    flex-direction: column;
+    
+    /* Adds Space between the fields to avoid cluster and add some level of organization */
+    gap: 15px;
+
+    width: 15%;/*280px;*/
+
+    padding: 25px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+
+    background-color: rgb(0,0,0);
+
+    border: 1px  solid rgb(0,255,58);
+
+}
+
+/* Boxes to adjust the CTF submit buttons looks */
+input[type="submit"]
+{
+    width: 15%;
+
+    height: 75px;
+
+    margin-left: 45px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    background-color: rgb(177, 18, 18);
+
+    border: 5px solid black;
+}
+
+input[type="submit"] :hover
+{
+    color: white;
+}
+
+input[type="submit"] :active
+{
+    color: white;
+}
+
+input[type="text"], textarea
+{
+    width: 100%;
+}
+
+
+/* Box for adjusting the formatting of the newly created boxes */
+.ctf-value
+{
+    background-color: teal;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    border: solid 3px black;
+}
+
